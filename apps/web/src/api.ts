@@ -1,4 +1,5 @@
-export const BASE=import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+// Production uses the same Vercel origin. Local Vite development keeps the API on :8000.
+export const BASE=import.meta.env.VITE_API_BASE_URL || (import.meta.env.DEV?'http://localhost:8000':'');
 export class ApiError extends Error {constructor(public code:string,message:string){super(message)}}
 export async function api(path:string,body?:unknown,key:string=crypto.randomUUID()):Promise<any>{
   const token=sessionStorage.getItem('token');

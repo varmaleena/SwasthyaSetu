@@ -3,6 +3,7 @@ import {createRoot} from 'react-dom/client';
 import {api,upload,saveDraft,drafts,ApiError} from './api';
 import {recordWav} from './audio';
 import {Replenishments} from './Replenishments';
+import {DemoExperience} from './DemoExperience';
 import './style.css';
 
 const tabs=['Overview','Report stock','Forecast & plan','Shipments','Facility readiness','Shared modelling','Evidence'];
@@ -39,7 +40,7 @@ function Metric({label,value,note}:{label:string;value:number;note:string}){retu
 function Inventory({rows}:{rows:any[]}){return <section className="card"><div className="section-title"><h2>Batch inventory</h2><span className="muted">Synthetic · MED-001 · Paracetamol 500 mg tablets</span></div><div className="tablewrap"><table><thead><tr><th>Facility / lot</th><th>On hand</th><th>Reserved</th><th>Available</th><th>Expiry</th><th>Version</th></tr></thead><tbody>{rows.map(b=><tr key={b.id}><td><b>{b.facility_id}</b> <small>{b.lot}</small></td><td>{b.on_hand}</td><td>{b.reserved}</td><td>{b.on_hand-b.reserved-b.quarantined}</td><td>{b.expiry}</td><td>{b.version}</td></tr>)}</tbody></table></div></section>}
 function Forecast({items}:{items:any}){const a=items.A;return <><p className="notice">{a.method} · {a.model_version}</p><svg className="chart" viewBox="0 0 430 180" role="img" aria-label="Cumulative demand uncertainty for facility A"><line x1="25" y1="155" x2="420" y2="155" stroke="#c9d7d1"/>{['p10','p50','p90'].map((key,i)=><polyline key={key} points={a[key].map((v:number,j:number)=>`${25+j*29},${155-v/Math.max(...a.p90)*135}`).join(' ')} fill="none" stroke={['#a6bbb3','#176d5c','#829e91'][i]} strokeWidth={i===1?3:1.5} strokeDasharray={i===1?'':'4'}/>)}<text x="25" y="177">Day 1</text><text x="365" y="177">Day 14</text></svg><p>Solid: p50 · Dashed: p10/p90 · 14-day stock-out risk: {(a.risk_14d*100).toFixed(0)}%</p><small>Intervals are experimental; inspect coverage in Evidence.</small></>}
 function Capacity({c,clock,busy,onSave}:{c:any;clock:string;busy:boolean;onSave:(v:any)=>void}){const [v,setV]=useState(c.payload);return <section className="card"><h2>Facility {v.facility_id}</h2><span className="badge">{new Date(clock).getTime()-new Date(v.observed_at).getTime()>8*3600000?'Stale':'Current'} synthetic report</span>{['physical_beds','operational_beds','occupied_beds','footfall'].map(k=><label key={k}>{k.replaceAll('_',' ')}<input type="number" min="0" value={v[k]??''} onChange={e=>setV({...v,[k]:e.target.value===''?null:+e.target.value})}/></label>)}<label>Nurses present<input type="number" min="0" value={v.staff_by_role.nurse??0} onChange={e=>setV({...v,staff_by_role:{...v.staff_by_role,nurse:+e.target.value}})}/></label><p>Free operational beds: {v.operational_beds===null||v.occupied_beds===null?'Unknown':v.operational_beds-v.occupied_beds}</p><button disabled={busy} onClick={()=>{const {source,observed_at,...body}=v;onSave(body)}}>Save readiness</button></section>}
-createRoot(document.getElementById('root')!).render(<App/>);
+createRoot(document.getElementById('root')!).render(<DemoExperience advanced={<App/>}/>);
 if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js');
 
 

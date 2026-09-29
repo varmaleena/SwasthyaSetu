@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test';
 
 test('fresh visitor completes actual golden report-to-receipt workflow',async({page})=>{
-  await page.goto('/');await expect(page.getByRole('heading',{name:'The right stock.'})).toBeVisible();
+  await page.goto('/?workspace=1');await expect(page.getByRole('heading',{name:'The right stock.'})).toBeVisible();
   await page.screenshot({path:'../../docs/screenshots/landing.png',fullPage:true});
   await page.getByRole('button',{name:'Start interactive demo'}).click();
   await expect(page.getByRole('heading',{name:'Overview',exact:true})).toBeVisible();
@@ -40,7 +40,7 @@ test('fresh visitor completes actual golden report-to-receipt workflow',async({p
 });
 
 test('mobile, language previews, offline version conflict and denied microphone',async({page,context})=>{
-  await page.setViewportSize({width:390,height:844});await page.goto('/');
+  await page.setViewportSize({width:390,height:844});await page.goto('/?workspace=1');
   await page.getByLabel('Interface language').selectOption('hi');await expect(page.getByText('Preview translations:')).toBeVisible();
   await page.getByLabel('Interface language').selectOption('te');await page.getByLabel('Interface language').selectOption('en');
   await page.getByRole('button',{name:'Start interactive demo'}).click();await expect(page.getByRole('heading',{name:'Overview',exact:true})).toBeVisible();
@@ -58,7 +58,7 @@ test('mobile, language previews, offline version conflict and denied microphone'
 });
 
 test('scheduled replenishment requires actual confirmation and shared round persists',async({page})=>{
-  await page.goto('/');await page.getByLabel('Demo scenario').selectOption('S01');
+  await page.goto('/?workspace=1');await page.getByLabel('Demo scenario').selectOption('S01');
   await page.getByRole('button',{name:'Start interactive demo'}).click();
   await expect(page.getByRole('heading',{name:'Overview',exact:true})).toBeVisible();
   await page.getByRole('navigation').getByRole('button',{name:/Forecast & plan/}).click();

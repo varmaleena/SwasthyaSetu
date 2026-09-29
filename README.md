@@ -4,6 +4,14 @@ A working synthetic health-supply prototype: stock reports, demand forecasts, do
 
 **All operational data and actors are fictional. No physical deliveries or clinical decisions. No cloud services have been provisioned.** See [BUILD_STATUS.md](BUILD_STATUS.md) for verified gates and blockers.
 
+## Showing the demo
+
+Open `http://localhost:5173` and choose **Try the 3-minute story**. The default experience introduces Anitha, a fictional pharmacist with 40 tablets against an example requirement of 100. Each screen explains whose job you are trying and why it matters: count medicine, find help, get both officers’ permission, send the box and confirm arrival. You do not need to select role or district codes.
+
+Try receiving only 20 tablets first: the other 40 remain on the way until explicitly confirmed. Counts, recommendations, approvals and receipts are saved by the actual API. **Meet the team** explains the people; **Detailed workspace** opens the full forecasting, evidence and scenario tools. **Start a fresh story** prepares a separate practice session. All people, places and stock are clearly labelled fictional; no vehicle tracking or physical delivery is claimed.
+
+For a public judge demo, the repository is prepared to serve the React frontend and FastAPI backend from one Vercel project. Persistent hosted use still requires two external PostgreSQL databases. See [the deployment guide](docs/DEPLOYMENT.md); no cloud deployment or paid service is implied by the local configuration.
+
 ## Local setup
 
 Prerequisites: Python 3.12, Node.js 22+, Git. PostgreSQL 16+ or Docker is preferred. Local SQLite is a development fallback only and is rejected in hosted mode. Tested here with Python 3.12, Node and Edge on Windows, plus repository-local PostgreSQL 18.4. Dependencies are pinned in `requirements.lock.txt` and npm lockfiles.

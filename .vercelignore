@@ -1,0 +1,13 @@
+.git
+.venv
+.pytest_cache
+.local-secret
+infra/local-postgres
+apps/web/node_modules
+apps/web/dist
+test-results
+playwright-report
+docs/screenshots
+state_a.db
+state_b.db
+*.log

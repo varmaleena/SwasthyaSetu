@@ -1,0 +1,11 @@
+/* CSP-safe dynamic stock indicator: native progress avoids inline styles. */
+.guide-need-bar {
+  display: block;
+  width: 100%;
+  border: 0;
+  appearance: none;
+}
+
+.guide-need-bar::-webkit-progress-bar { background: #f0e2c9; }
+.guide-need-bar::-webkit-progress-value { background: #81a677; transition: width .5s; }
+.guide-need-bar::-moz-progress-bar { background: #81a677; }
