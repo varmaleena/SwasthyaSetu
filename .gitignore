@@ -14,3 +14,6 @@ tmp/
 test-results/
 playwright-report/
 *.tsbuildinfo
+.codex-*/
+.chart-data-*/
+output/
