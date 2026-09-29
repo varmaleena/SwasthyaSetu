@@ -1,0 +1,13 @@
+# Model card — nb-v2-local-effects
+
+Purpose: synthetic operational demand forecasting, not diagnosis, prescribing or patient prioritization. Google AI performs media extraction separately; this model is trained locally on CPU.
+
+Training seed 20260927. Two fictional states × eight facilities × eight exact products. Days 0–119 train; 120–149 calibrate dispersion; 150–179 select against weekday median. Days 180–207 are absent from serving databases. Missing reports and closures are excluded; known stock exhaustion uses the negative-binomial survival likelihood, other days use ordinary count likelihood. Shape 12 is used for coefficient fitting, then dispersion is estimated from calibration residuals. Shared predictors: intercept, weekend, log footfall. Facility/product intercept adjustments are shrunk and kept local during model exchange.
+
+The first pooled model was inferior. The v2 model adds the specified facility/product effects; its validation MAE is 4.9665 compared with 5.3716 for weekday median. The artifact records exact coefficients, training data hash, split boundaries, optimizer convergence and selection. This is neither proof of hidden-demand recovery in real data nor evidence of national-scale performance.
+
+Inference samples 100 demand paths with seeded shared shocks and computes cumulative quantiles after summing each path. The donor policy uses a 95th-percentile seven-day requirement plus reserve. This is a configurable engineering policy, not a validated clinical guarantee. Intervals have finite-sample uncertainty and model misspecification.
+
+`scripts/evaluate.py` compares weekday median, stock-out-adjusted consumption and advanced count forecasts against evaluator-only latent synthetic demand. Initial independent seeds were inspected during development; those are development evaluation evidence, not a permanently untouched test. Final saved results clearly record seeds and hashes. The initial policy replay is deliberately simplified. `scripts/transport_evaluation.py` adds 24 matched runs across two additional seeds, normal/surge demand, two delay settings and three policies, including the actual solver. It tracks batch expiry, in-transit supply, donor stock-out days and cost proxies. These remain synthetic simulations, not field evidence. Inspect all metrics rather than selecting a favorable percentage.
+
+Federation exchanges only shared coefficients and bounded counts/aggregate metrics. Each node retains its local effects and rejects worsened validation. Both nodes currently reject the shared candidate. No secure aggregation, formal privacy guarantee or live institutional governance is implemented.

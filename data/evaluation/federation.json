@@ -1,0 +1,55 @@
+{
+  "status": "measured separate-process exchange",
+  "messages": [
+    {
+      "state": "A",
+      "schema": "count-v1:intercept,weekend,log-footfall",
+      "coefficients": [
+        2.5490794822234477,
+        -0.08873271559984398,
+        0.873647175933407
+      ],
+      "sample_count": 1715,
+      "validation_mae": 4.452519556671217
+    },
+    {
+      "state": "B",
+      "schema": "count-v1:intercept,weekend,log-footfall",
+      "coefficients": [
+        2.7079356296864425,
+        -0.008694775868402099,
+        0.9013451285198737
+      ],
+      "sample_count": 1712,
+      "validation_mae": 5.346016831681881
+    }
+  ],
+  "candidate": {
+    "schema": "count-v1:intercept,weekend,log-footfall",
+    "coefficients": [
+      2.628438024521856,
+      -0.048748778389389215,
+      0.8874840288158204
+    ],
+    "update_hashes": [
+      "e3771c341abfa048691a87baf99a664c6bf35274684295fd1623a129604cfee0",
+      "32091fecc58bdfee08e1c49fa24b2cfc593da4defcf64f5a5bfefeeae037790e"
+    ]
+  },
+  "decisions": [
+    {
+      "state": "A",
+      "local_mae": 4.452519556671217,
+      "candidate_mae": 4.5854784346663156,
+      "accepted": false
+    },
+    {
+      "state": "B",
+      "local_mae": 5.346016831681881,
+      "candidate_mae": 5.386430111729218,
+      "accepted": false
+    }
+  ],
+  "raw_rows_exchanged": false,
+  "limitations": "Synthetic model parameters can leak information; no secure aggregation."
+}

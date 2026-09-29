@@ -1,0 +1,7385 @@
+{
+  "status": "measured",
+  "source": "synthetic evaluator-only truth",
+  "script_version": "evaluate-v1",
+  "model_version": "nb-v2-local-effects",
+  "model_hash": "e45a6ed2bf4fe1fd1fbd603b096901737f8008d0e707d96588d07c1bda9d555b",
+  "data_hash": "2c8c887aa5fde08bcac1cbe9f95e9f4c88fff3e0d9cc40b91211bc8b6a2866c8",
+  "evaluation_seeds": [
+    20260928,
+    20260929
+  ],
+  "test_days": [
+    180,
+    207
+  ],
+  "training_cutoff": 119,
+  "forecast_metrics": {
+    "weekday_median": {
+      "mae": 5.127790178571429,
+      "coverage_p10_p90": 0.7720424107142858
+    },
+    "adjusted_consumption": {
+      "mae": 5.263950892857142,
+      "coverage_p10_p90": 0.7816685267857142
+    },
+    "experimental_nb": {
+      "mae": 4.897397366505253,
+      "coverage_p10_p90": 0.8494698660714286
+    }
+  },
+  "policy_replay": {
+    "fixed_threshold": [
+      {
+        "seed": 20260928,
+        "unmet_units": 198,
+        "stockout_facility_days": 19,
+        "donor_unmet_units": 198,
+        "transport_cost_proxy": 150,
+        "expiry_waste": 0
+      },
+      {
+        "seed": 20260929,
+        "unmet_units": 199,
+        "stockout_facility_days": 15,
+        "donor_unmet_units": 199,
+        "transport_cost_proxy": 60,
+        "expiry_waste": 0
+      }
+    ],
+    "nearest_feasible": [
+      {
+        "seed": 20260928,
+        "unmet_units": 147,
+        "stockout_facility_days": 16,
+        "donor_unmet_units": 138,
+        "transport_cost_proxy": 70,
+        "expiry_waste": 0
+      },
+      {
+        "seed": 20260929,
+        "unmet_units": 192,
+        "stockout_facility_days": 17,
+        "donor_unmet_units": 179,
+        "transport_cost_proxy": 50,
+        "expiry_waste": 0
+      }
+    ],
+    "donor_protected": [
+      {
+        "seed": 20260928,
+        "unmet_units": 147,
+        "stockout_facility_days": 20,
+        "donor_unmet_units": 88,
+        "transport_cost_proxy": 20,
+        "expiry_waste": 0
+      },
+      {
+        "seed": 20260929,
+        "unmet_units": 192,
+        "stockout_facility_days": 18,
+        "donor_unmet_units": 149,
+        "transport_cost_proxy": 20,
+        "expiry_waste": 0
+      }
+    ]
+  },
+  "stratified": [
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 3.2857142857142856,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 3.1607142857142856,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 3.3700484428821986,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 3.392857142857143,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 3.7372448979591835,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 3.832691529968322,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 3.75,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 4.122448979591836,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 3.2243065079674937,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 5.464285714285714,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 4.928571428571429,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 4.231764700122668,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 3.6785714285714284,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 4.821428571428571,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 2.9223028286874952,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 4.642857142857143,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 4.377551020408164,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 4.244259929294881,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 4.821428571428571,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 4.892857142857143,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 5.156572021934632,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 5.392857142857143,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 6.571428571428571,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 5.355361706756213,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 3.107142857142857,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 3.999999999999999,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 3.246647067037427,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 3.7857142857142856,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 4.357142857142857,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 3.849154310946836,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 3.107142857142857,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 3.357142857142857,
+      "coverage_p10_p90": 0.9642857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 3.9486748537286487,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 5.642857142857143,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 5.545918367346938,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 4.704794899653838,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 4.892857142857143,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 5.122448979591837,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 4.549041969402917,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 5.821428571428571,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 5.6352040816326525,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 5.101039102625751,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 5.321428571428571,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 5.033163265306123,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 4.540104584834183,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 8.071428571428571,
+      "coverage_p10_p90": 0.5714285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 8.214285714285714,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 7.530362575011088,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 4.357142857142857,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 5.255102040816327,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 3.9844700928619203,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 4.892857142857143,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 5.107142857142857,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 4.670617567297705,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 4.714285714285714,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 5.135204081632653,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 3.7021522396431585,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 4.107142857142857,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 5.612244897959185,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 3.835291983921907,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 5.035714285714286,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 5.58673469387755,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 5.492592894730051,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 6.071428571428571,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 5.563775510204081,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 5.803910057901482,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 7.107142857142857,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 6.88265306122449,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 5.611480052219471,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 5.642857142857143,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 5.247448979591836,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 5.974970477748033,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 2.7142857142857144,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 2.875,
+      "coverage_p10_p90": 0.9642857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 2.104680270430799,
+      "coverage_p10_p90": 1.0
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 4.0,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 3.7193877551020407,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 3.602252130453722,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 4.0,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 3.7193877551020407,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 3.900603605399772,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 3.4285714285714284,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 3.487244897959184,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 3.4717624978999986,
+      "coverage_p10_p90": 1.0
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 4.142857142857143,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 4.563775510204081,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 3.8740754130083013,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 4.964285714285714,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 5.204081632653062,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 4.743833114033799,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 5.714285714285714,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 5.974489795918368,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 5.614483455782131,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 6.0,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 6.1734693877551035,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 5.832097458554159,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 3.25,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 3.3826530612244903,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 3.473236722931547,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 4.428571428571429,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 4.454081632653061,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 3.6176395878895375,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 3.8214285714285716,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 4.3061224489795915,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 3.7598368784152996,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 4.857142857142857,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 4.673469387755103,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 4.430330934262331,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 3.2857142857142856,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 4.214285714285714,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 3.2466561185456513,
+      "coverage_p10_p90": 0.9642857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 5.285714285714286,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 6.33673469387755,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 4.863783350472112,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 5.5,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 4.403061224489797,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 4.559175511706763,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 5.5,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 5.14795918367347,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 4.82842500924242,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 4.464285714285714,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 3.7193877551020407,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 4.526353578918809,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 3.7142857142857144,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 3.775510204081633,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 3.1446859853651086,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 5.75,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 5.836734693877552,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 5.296447195402202,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 5.5,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 5.780612244897959,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 5.222855708096499,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 6.714285714285714,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 6.839285714285714,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 6.46568764685725,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 5.607142857142857,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 5.926020408163266,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 4.925121779205268,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 5.928571428571429,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 5.785714285714286,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 5.881453524318233,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 5.892857142857143,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 5.58673469387755,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 5.73247302453015,
+      "coverage_p10_p90": 0.9642857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 3.3214285714285716,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 3.2142857142857144,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 3.2496773888660186,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 3.3214285714285716,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 3.3494897959183674,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 3.244608076042676,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 3.9642857142857144,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 3.943877551020409,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 3.631703767069711,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 3.6785714285714284,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 3.6454081632653064,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 3.8105997969770873,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 4.107142857142857,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 4.020408163265306,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 3.7592630118486854,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 5.25,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 6.035714285714286,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 4.941953774101636,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 3.5714285714285716,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 3.8214285714285716,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 3.853941026987759,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 5.071428571428571,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 6.41326530612245,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 5.582184546298595,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 3.392857142857143,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 4.3596938775510194,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 3.632984652061655,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 3.2857142857142856,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 3.4464285714285716,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 3.6829459355396588,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 4.857142857142857,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 4.678571428571429,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 4.727107678386476,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 4.25,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 4.48469387755102,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 4.1743799832670545,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 5.214285714285714,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 5.209183673469388,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 4.542815704348768,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 5.285714285714286,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 4.928571428571428,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 5.327585559118775,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 5.357142857142857,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 5.262755102040815,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 5.166163184368161,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 6.25,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 5.966836734693877,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 5.92497469828611,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 4.142857142857143,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 4.045918367346939,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 3.887262888991311,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 3.5,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 3.173469387755102,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 3.0611627248399373,
+      "coverage_p10_p90": 1.0
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 4.75,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 4.775510204081633,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 4.3662366360843965,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 5.678571428571429,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 5.691326530612244,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 5.243808426135493,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 7.428571428571429,
+      "coverage_p10_p90": 0.6071428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 7.428571428571429,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 7.17463870274802,
+      "coverage_p10_p90": 0.6071428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 7.107142857142857,
+      "coverage_p10_p90": 0.6071428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 7.168367346938775,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 6.4418158100682446,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 6.285714285714286,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 6.908163265306121,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 6.02628430380832,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 5.964285714285714,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 6.5357142857142865,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 5.851505513312484,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 4.607142857142857,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 4.931122448979592,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 4.42653991076485,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 5.357142857142857,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 5.038265306122449,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 4.350913468824733,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 5.357142857142857,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 5.520408163265306,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 5.663413479539066,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 6.107142857142857,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 5.964285714285714,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 5.897444441265367,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 8.5,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 8.821428571428571,
+      "coverage_p10_p90": 0.5357142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 7.9584125713462965,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 4.928571428571429,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 6.997448979591837,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 5.38422462761377,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 8.464285714285714,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 8.821428571428571,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 7.984444627691853,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 7.035714285714286,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 8.326530612244898,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 7.879140326343288,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 6.5,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 6.571428571428571,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 6.338897272811401,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 5.821428571428571,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 6.035714285714286,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 4.817280290731868,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 5.142857142857143,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 5.586734693877552,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 4.8000220291064375,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 5.535714285714286,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 6.267857142857143,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 5.339502109213105,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 5.392857142857143,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 6.247448979591836,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 6.275761859067987,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 5.678571428571429,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 4.783163265306123,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 4.713720097975771,
+      "coverage_p10_p90": 1.0
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 7.678571428571429,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 7.709183673469387,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 7.267716128615326,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 7.464285714285714,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 7.252551020408163,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 6.8250198490920795,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 3.2857142857142856,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 3.354591836734694,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 3.776786140380081,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 3.142857142857143,
+      "coverage_p10_p90": 0.9642857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 2.6734693877551017,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 2.469856802506507,
+      "coverage_p10_p90": 1.0
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 5.25,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 4.8979591836734695,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 4.2868279361891695,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 4.892857142857143,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 5.035714285714284,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 4.961850139214976,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 4.035714285714286,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 5.142857142857143,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 4.4115099795758,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 5.535714285714286,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 5.7653061224489806,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 5.601392165429347,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 5.785714285714286,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 5.655612244897958,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 4.882939310556893,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 5.428571428571429,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 5.704081632653062,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 5.100426965233262,
+      "coverage_p10_p90": 0.9642857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 3.0357142857142856,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 2.6734693877551012,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 3.351675868502422,
+      "coverage_p10_p90": 0.9642857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 3.392857142857143,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 3.464285714285714,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 3.821342792925305,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 3.5357142857142856,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 3.9617346938775517,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 3.5926935090047123,
+      "coverage_p10_p90": 0.9642857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 5.321428571428571,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 5.153061224489797,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 4.853521581663002,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 5.035714285714286,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 5.153061224489796,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 4.850020200383453,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 6.785714285714286,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 6.780612244897959,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 6.51938345424634,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 5.428571428571429,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 5.510204081632656,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 4.272288070597918,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 7.392857142857143,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 6.6020408163265305,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 5.81678338243409,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 5.214285714285714,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 4.642857142857143,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 4.844092312076306,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 4.607142857142857,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 5.591836734693877,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 4.558146695814935,
+      "coverage_p10_p90": 0.9642857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 4.285714285714286,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 5.55357142857143,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 3.9146411556177942,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 7.5,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 8.283163265306122,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 7.69688839035016,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 4.285714285714286,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 5.461734693877552,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 4.745462743057648,
+      "coverage_p10_p90": 0.9642857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 7.321428571428571,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 6.821428571428571,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 7.100548461521733,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 5.428571428571429,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 6.515306122448979,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 4.758942196346013,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 6.714285714285714,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 7.816326530612244,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 6.674222995551863,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 4.0,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 3.6785714285714297,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 4.494333314542687,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 3.6785714285714284,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 4.612244897959182,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 3.4951365228567424,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 3.9285714285714284,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 6.005102040816327,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 3.64306177572055,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 4.071428571428571,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 4.040816326530612,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 3.555828570779979,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 4.285714285714286,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 4.706632653061225,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 4.1644641856449,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 5.5,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 5.931122448979591,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 5.34291289703272,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 8.107142857142858,
+      "coverage_p10_p90": 0.5357142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 7.4183673469387745,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 6.907860535313288,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 6.535714285714286,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 6.3061224489795915,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 5.876571494101371,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 4.214285714285714,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 3.9846938775510203,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 4.050101616308207,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 4.25,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 5.132653061224489,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 3.8552228025584006,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 5.035714285714286,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 4.714285714285714,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 4.347527487501534,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 4.678571428571429,
+      "coverage_p10_p90": 0.9642857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 4.533163265306122,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 4.73559207805179,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 5.928571428571429,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 6.716836734693878,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 5.418032722762951,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 5.642857142857143,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 5.795918367346938,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 5.768888134184642,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 5.714285714285714,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 6.46938775510204,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 5.972436424435202,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 6.535714285714286,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 6.533163265306123,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260928,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 6.374318770733504,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 2.25,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 2.739795918367346,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 3.388784459324903,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 2.9642857142857144,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 2.974489795918367,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 3.355974738185423,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 4.535714285714286,
+      "coverage_p10_p90": 0.6071428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 4.6020408163265305,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 4.507187496938919,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 4.107142857142857,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 4.028061224489796,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 4.217282946472332,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 4.607142857142857,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 4.346938775510204,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 4.433590430479534,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 4.678571428571429,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 4.400510204081632,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 4.688083709633013,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 3.892857142857143,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 3.5867346938775504,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 4.29891455530847,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 4.285714285714286,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 5.374999999999999,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "A",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 3.716395793081129,
+      "coverage_p10_p90": 0.9642857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 4.321428571428571,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 4.107142857142857,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 3.6946587030705507,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 4.928571428571429,
+      "coverage_p10_p90": 0.6071428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 5.459183673469387,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 5.065921736099559,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 4.035714285714286,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 3.8979591836734704,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 3.7894751654516696,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 4.0,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 4.035714285714286,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 4.113129534610844,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 5.571428571428571,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 5.775510204081634,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 4.873345656596548,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 6.0,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 5.813775510204081,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 5.4300255882995545,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 5.071428571428571,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 4.964285714285714,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 5.145389355415427,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 5.0,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 5.948979591836735,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "B",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 5.105729538889057,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 5.142857142857143,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 5.326530612244899,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 4.879584479425245,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 4.785714285714286,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 4.545918367346939,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 4.313328189738902,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 4.75,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 4.5229591836734695,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 4.220727318539601,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 4.428571428571429,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 4.459183673469388,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 4.277932745357741,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 6.142857142857143,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 6.142857142857143,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 6.490670924906218,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 5.821428571428571,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 7.234693877551021,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 5.707978940899061,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 4.607142857142857,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 4.75,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 4.564942891784056,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 5.071428571428571,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 5.285714285714286,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "C",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 5.812773982691769,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 3.642857142857143,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 3.392857142857143,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 3.3757261614354688,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 3.2857142857142856,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 3.5816326530612246,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 3.536531301661323,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 4.607142857142857,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 4.413265306122449,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 4.335397778329657,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 3.5714285714285716,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 3.948979591836735,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 3.964950971099976,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 4.178571428571429,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 4.081632653061225,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 4.143051622861749,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 5.071428571428571,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 5.443877551020407,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 4.841771456502549,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 4.428571428571429,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 4.698979591836735,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 4.886256173490671,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 5.892857142857143,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 5.839285714285714,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "D",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 5.414338554627409,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 5.464285714285714,
+      "coverage_p10_p90": 0.5
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 5.306122448979592,
+      "coverage_p10_p90": 0.6071428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 4.902212043373703,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 3.892857142857143,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 4.051020408163265,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 3.8001562030884855,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 4.571428571428571,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 4.801020408163265,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 4.719488347308065,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 5.142857142857143,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 5.163265306122448,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 4.66871442654444,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 4.75,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 4.6938775510204085,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 4.8848242971081515,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 4.142857142857143,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 4.209183673469388,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 3.5174161773731294,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 5.107142857142857,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 4.887755102040816,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 4.961891143296959,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 5.107142857142857,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 4.604591836734693,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "E",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 4.450726895052946,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 3.5,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 4.000000000000001,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 3.2500518580866364,
+      "coverage_p10_p90": 0.9642857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 3.9642857142857144,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 4.280612244897958,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 3.734671163855097,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 6.0,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 4.989795918367347,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 5.513662903090469,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 4.607142857142857,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 4.604591836734693,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 4.653479753285836,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 6.035714285714286,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 5.3596938775510194,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 4.734991917636228,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 7.0,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 6.571428571428571,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 6.8006955878825694,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 6.857142857142857,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 6.688775510204082,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 6.234289965535573,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 7.535714285714286,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 6.966836734693877,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "F",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 6.0847969875551655,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 2.892857142857143,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 3.0,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 2.9129111925088376,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 3.2142857142857144,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 3.0714285714285716,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 3.053388284250695,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 4.75,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 4.928571428571429,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 5.259425281421661,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 3.5714285714285716,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 3.331632653061224,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 3.521251448298108,
+      "coverage_p10_p90": 0.9642857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 3.6785714285714284,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 4.336734693877551,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 4.01311756813323,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 4.892857142857143,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 4.961734693877551,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 4.631676082594877,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 6.035714285714286,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 6.191326530612244,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 5.697110230187202,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 4.964285714285714,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 6.25,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "G",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 5.091044888488859,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 3.642857142857143,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 4.061224489795919,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 3.843203578552792,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 3.9642857142857144,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 3.670918367346939,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 3.374833509110403,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 5.785714285714286,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 5.5102040816326525,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 4.861835470633692,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 6.285714285714286,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 6.142857142857143,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 5.508877612461826,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 5.428571428571429,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 5.058673469387756,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 5.29826919061161,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 4.857142857142857,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 4.5,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 4.559479033793768,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 4.464285714285714,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 3.6607142857142856,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 4.584801091558368,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 6.785714285714286,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 6.99234693877551,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "A",
+      "facility": "H",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 6.170581027913925,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 4.357142857142857,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 4.25,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 3.8975357151821965,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 5.178571428571429,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 5.224489795918367,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 4.4990664805943,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 4.178571428571429,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 4.627551020408164,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 3.600639043549589,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 5.178571428571429,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 5.265306122448979,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 4.647318326076373,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 5.535714285714286,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 6.196428571428571,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 5.635787564443306,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 6.964285714285714,
+      "coverage_p10_p90": 0.5714285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 6.964285714285714,
+      "coverage_p10_p90": 0.5714285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 6.4853367248518525,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 7.214285714285714,
+      "coverage_p10_p90": 0.6071428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 7.443877551020408,
+      "coverage_p10_p90": 0.6071428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 6.766108297476288,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 6.321428571428571,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 5.954081632653063,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "A",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 4.741467627945137,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 5.464285714285714,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 6.040816326530611,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 4.958627930025957,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 4.464285714285714,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 4.405612244897958,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 3.963156992527929,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 5.0,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 5.1403061224489806,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 4.193679501887926,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 4.571428571428571,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 4.8316326530612255,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 3.9449102689837945,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 8.285714285714286,
+      "coverage_p10_p90": 0.5357142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 7.714285714285714,
+      "coverage_p10_p90": 0.6071428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 7.060784202488272,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 5.607142857142857,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 5.954081632653062,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 5.458228885364101,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 8.0,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 8.882653061224492,
+      "coverage_p10_p90": 0.6071428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 7.645212375978785,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 8.785714285714286,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 10.173469387755102,
+      "coverage_p10_p90": 0.5357142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "B",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 8.762172976533993,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 5.642857142857143,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 5.250000000000001,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 5.828222621294388,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 4.571428571428571,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 4.7678571428571415,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 5.163312032728407,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 4.607142857142857,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 4.795918367346938,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 4.052828884583425,
+      "coverage_p10_p90": 0.9642857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 5.821428571428571,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 6.456632653061225,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 5.939775329885464,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 5.392857142857143,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 5.563775510204081,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 4.876371813902208,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 7.321428571428571,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 8.081632653061224,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 7.048710409824414,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 6.071428571428571,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 6.974489795918367,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 5.641528284761518,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 9.071428571428571,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 8.66326530612245,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "C",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 8.095678960955691,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 3.142857142857143,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 3.2576530612244903,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 3.8128131712967757,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 3.642857142857143,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 3.8469387755102056,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 3.525039072865774,
+      "coverage_p10_p90": 1.0
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 4.285714285714286,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 4.03061224489796,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 4.002077814092971,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 6.464285714285714,
+      "coverage_p10_p90": 0.6071428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 6.8903061224489806,
+      "coverage_p10_p90": 0.5357142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 6.2759516883085995,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 4.785714285714286,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 4.8571428571428585,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 5.349649081698926,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 5.25,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 5.581632653061223,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 5.142370316990456,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 5.178571428571429,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 4.852040816326531,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 4.272101102628359,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 7.035714285714286,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 7.571428571428571,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "D",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 7.595196790281034,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 4.428571428571429,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 4.244897959183674,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 4.475544983778538,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 5.571428571428571,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 5.326530612244899,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 5.337402679833668,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 4.5,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 4.5,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 4.225451521208153,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 5.821428571428571,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 5.688775510204081,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 5.285254252428538,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 4.857142857142857,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 4.954081632653062,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 5.0282249982578895,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 5.928571428571429,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 5.78061224489796,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 6.446667280679937,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 8.464285714285714,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 8.785714285714286,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 7.824956099206462,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 5.321428571428571,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 5.938775510204082,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "E",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 5.116276215342741,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 4.214285714285714,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 3.8647959183673466,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 4.156536078157585,
+      "coverage_p10_p90": 0.9642857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 4.285714285714286,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 4.862244897959184,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 4.197790936759827,
+      "coverage_p10_p90": 0.9642857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 6.142857142857143,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 6.321428571428571,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 6.120278097059435,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 4.785714285714286,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 4.994897959183674,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 4.589893035980436,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 5.357142857142857,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 5.270408163265307,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 5.412334057706427,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 6.214285714285714,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 6.2653061224489806,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 6.017717219158312,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 7.964285714285714,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 8.153061224489795,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 7.15257670381812,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 9.535714285714286,
+      "coverage_p10_p90": 0.6071428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 9.535714285714286,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "F",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 8.539005338346074,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 2.75,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 2.89795918367347,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 3.0541808872157645,
+      "coverage_p10_p90": 1.0
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 4.25,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 3.747448979591837,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 4.142870673478819,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 3.7857142857142856,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 3.436224489795918,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 3.661779031535681,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 5.785714285714286,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 5.372448979591837,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 4.590031212771883,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 3.392857142857143,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 3.066326530612245,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 3.6478606798350603,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 4.892857142857143,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 4.892857142857143,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 4.657862389446318,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 4.714285714285714,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 6.035714285714286,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 5.405192489475196,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 4.428571428571429,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 4.3852040816326525,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "G",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 4.543061267039621,
+      "coverage_p10_p90": 0.8928571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-001",
+      "method": "weekday_median",
+      "mae": 4.5,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-001",
+      "method": "adjusted_consumption",
+      "mae": 4.2653061224489806,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-001",
+      "method": "experimental_nb",
+      "mae": 4.168559184953902,
+      "coverage_p10_p90": 0.9285714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-002",
+      "method": "weekday_median",
+      "mae": 5.714285714285714,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-002",
+      "method": "adjusted_consumption",
+      "mae": 5.678571428571426,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-002",
+      "method": "experimental_nb",
+      "mae": 5.335431451264263,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-003",
+      "method": "weekday_median",
+      "mae": 5.892857142857143,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-003",
+      "method": "adjusted_consumption",
+      "mae": 5.250000000000001,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-003",
+      "method": "experimental_nb",
+      "mae": 5.2986902738386386,
+      "coverage_p10_p90": 0.8571428571428571
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-004",
+      "method": "weekday_median",
+      "mae": 6.178571428571429,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-004",
+      "method": "adjusted_consumption",
+      "mae": 6.20408163265306,
+      "coverage_p10_p90": 0.6785714285714286
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-004",
+      "method": "experimental_nb",
+      "mae": 5.847385734137958,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-005",
+      "method": "weekday_median",
+      "mae": 5.035714285714286,
+      "coverage_p10_p90": 0.7142857142857143
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-005",
+      "method": "adjusted_consumption",
+      "mae": 4.969387755102041,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-005",
+      "method": "experimental_nb",
+      "mae": 5.695148612526795,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-006",
+      "method": "weekday_median",
+      "mae": 6.5,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-006",
+      "method": "adjusted_consumption",
+      "mae": 6.377551020408164,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-006",
+      "method": "experimental_nb",
+      "mae": 6.498164769949646,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-007",
+      "method": "weekday_median",
+      "mae": 7.464285714285714,
+      "coverage_p10_p90": 0.6428571428571429
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-007",
+      "method": "adjusted_consumption",
+      "mae": 7.27295918367347,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-007",
+      "method": "experimental_nb",
+      "mae": 6.406258584396025,
+      "coverage_p10_p90": 0.7857142857142857
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-008",
+      "method": "weekday_median",
+      "mae": 6.142857142857143,
+      "coverage_p10_p90": 0.75
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-008",
+      "method": "adjusted_consumption",
+      "mae": 5.821428571428571,
+      "coverage_p10_p90": 0.8214285714285714
+    },
+    {
+      "seed": 20260929,
+      "state": "B",
+      "facility": "H",
+      "medicine": "MED-008",
+      "method": "experimental_nb",
+      "mae": 5.99679837377838,
+      "coverage_p10_p90": 0.7857142857142857
+    }
+  ],
+  "elapsed_seconds": 0.927,
+  "limitations": [
+    "Synthetic outcomes do not establish clinical benefit",
+    "Replay assumes immediate transfer and no expiry during 28 days; not full transport simulation",
+    "Policies share identical initial stock, replenishment and demand",
+    "No global superiority claim"
+  ],
+  "transport_sensitivity": {
+    "script_version": "transport-v1",
+    "status": "measured synthetic transport replay",
+    "seeds": [
+      20261001,
+      20261002
+    ],
+    "controls": "Identical initial batches, replenishment, expiry, demand and delay per matched case. All policies protect donors; only demand estimation/allocation differs.",
+    "limitations": [
+      "Synthetic data only",
+      "Lead-time shocks are stress tests, not estimated real distributions",
+      "Future latent demand is evaluator-only",
+      "No universal improvement claimed"
+    ],
+    "rows": [
+      {
+        "seed": 20261001,
+        "district_surge_multiplier": 1.0,
+        "additional_delivery_delay_days": 0,
+        "policy": "fixed_threshold",
+        "unmet_units": 116,
+        "stockout_facility_days": 12,
+        "donor_unmet_units": 108,
+        "donor_stockout_days": 10,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 50,
+        "remaining_stock": 0,
+        "in_transit": 0,
+        "ledger_hash": "bc73cb2b84057ea7730d79d294fcca1ce8264804832b8c01f1d8c560efe82c45"
+      },
+      {
+        "seed": 20261001,
+        "district_surge_multiplier": 1.0,
+        "additional_delivery_delay_days": 0,
+        "policy": "nearest_feasible",
+        "unmet_units": 116,
+        "stockout_facility_days": 10,
+        "donor_unmet_units": 68,
+        "donor_stockout_days": 6,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 0,
+        "remaining_stock": 0,
+        "in_transit": 0,
+        "ledger_hash": "0d19b355dd2b004dff70ac83ddd456ec9222e8a0fbd42b6b2fed68adab6d6181"
+      },
+      {
+        "seed": 20261001,
+        "district_surge_multiplier": 1.0,
+        "additional_delivery_delay_days": 0,
+        "policy": "full_solver",
+        "unmet_units": 116,
+        "stockout_facility_days": 11,
+        "donor_unmet_units": 78,
+        "donor_stockout_days": 7,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 10,
+        "remaining_stock": 0,
+        "in_transit": 0,
+        "ledger_hash": "984ec9ee3f705e6c330563806ddc2c0932779f74ea8a8cc16a20ae901e7a03fb"
+      },
+      {
+        "seed": 20261001,
+        "district_surge_multiplier": 1.0,
+        "additional_delivery_delay_days": 2,
+        "policy": "fixed_threshold",
+        "unmet_units": 128,
+        "stockout_facility_days": 13,
+        "donor_unmet_units": 128,
+        "donor_stockout_days": 13,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 80,
+        "remaining_stock": 12,
+        "in_transit": 0,
+        "ledger_hash": "b6a33bcb1776d8edcbffdc8acecd8a2b4a49cf4cd54657d1021c2e0cdc197b43"
+      },
+      {
+        "seed": 20261001,
+        "district_surge_multiplier": 1.0,
+        "additional_delivery_delay_days": 2,
+        "policy": "nearest_feasible",
+        "unmet_units": 122,
+        "stockout_facility_days": 14,
+        "donor_unmet_units": 78,
+        "donor_stockout_days": 8,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 10,
+        "remaining_stock": 6,
+        "in_transit": 0,
+        "ledger_hash": "aee26d4a7a4bf2718b94a1d957a8c2631c90717587fb4a36764c956ada79c2bd"
+      },
+      {
+        "seed": 20261001,
+        "district_surge_multiplier": 1.0,
+        "additional_delivery_delay_days": 2,
+        "policy": "full_solver",
+        "unmet_units": 122,
+        "stockout_facility_days": 13,
+        "donor_unmet_units": 68,
+        "donor_stockout_days": 7,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 0,
+        "remaining_stock": 6,
+        "in_transit": 0,
+        "ledger_hash": "9bd9ae4686e0ea9b5f5fbb0d76407edee96fe1a0df746a07dd94b821e976e1c5"
+      },
+      {
+        "seed": 20261001,
+        "district_surge_multiplier": 1.5,
+        "additional_delivery_delay_days": 0,
+        "policy": "fixed_threshold",
+        "unmet_units": 227,
+        "stockout_facility_days": 20,
+        "donor_unmet_units": 179,
+        "donor_stockout_days": 16,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 50,
+        "remaining_stock": 0,
+        "in_transit": 0,
+        "ledger_hash": "c55361cb025690fec8a754dfea9f353806c6024eb6f48f761b3a8f271fd73899"
+      },
+      {
+        "seed": 20261001,
+        "district_surge_multiplier": 1.5,
+        "additional_delivery_delay_days": 0,
+        "policy": "nearest_feasible",
+        "unmet_units": 227,
+        "stockout_facility_days": 20,
+        "donor_unmet_units": 139,
+        "donor_stockout_days": 13,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 0,
+        "remaining_stock": 0,
+        "in_transit": 0,
+        "ledger_hash": "d56a8227113b2b9b0e7a9e80b24c9b7f6b0f495482e0073e06cadd56683bde91"
+      },
+      {
+        "seed": 20261001,
+        "district_surge_multiplier": 1.5,
+        "additional_delivery_delay_days": 0,
+        "policy": "full_solver",
+        "unmet_units": 227,
+        "stockout_facility_days": 18,
+        "donor_unmet_units": 149,
+        "donor_stockout_days": 13,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 10,
+        "remaining_stock": 0,
+        "in_transit": 0,
+        "ledger_hash": "4253082ddfa2ce61e50a237c1f3d6c0e98a67b8acc3bd3ece930e5172c7508cf"
+      },
+      {
+        "seed": 20261001,
+        "district_surge_multiplier": 1.5,
+        "additional_delivery_delay_days": 2,
+        "policy": "fixed_threshold",
+        "unmet_units": 233,
+        "stockout_facility_days": 24,
+        "donor_unmet_units": 199,
+        "donor_stockout_days": 19,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 80,
+        "remaining_stock": 6,
+        "in_transit": 0,
+        "ledger_hash": "0c1e123a4dad8f21a6d81b764087fd3f1365b37a9ba4175116e067313681abec"
+      },
+      {
+        "seed": 20261001,
+        "district_surge_multiplier": 1.5,
+        "additional_delivery_delay_days": 2,
+        "policy": "nearest_feasible",
+        "unmet_units": 233,
+        "stockout_facility_days": 23,
+        "donor_unmet_units": 149,
+        "donor_stockout_days": 16,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 10,
+        "remaining_stock": 6,
+        "in_transit": 0,
+        "ledger_hash": "48bd6efb7c4bb0ef5473b1cab209f516482f2d5ca3e69fec7664576a364767c5"
+      },
+      {
+        "seed": 20261001,
+        "district_surge_multiplier": 1.5,
+        "additional_delivery_delay_days": 2,
+        "policy": "full_solver",
+        "unmet_units": 233,
+        "stockout_facility_days": 24,
+        "donor_unmet_units": 139,
+        "donor_stockout_days": 15,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 0,
+        "remaining_stock": 6,
+        "in_transit": 0,
+        "ledger_hash": "7c0808fee31042d90909c71069529ced8b8ee783233da1c9387e97cc90a38c4f"
+      },
+      {
+        "seed": 20261002,
+        "district_surge_multiplier": 1.0,
+        "additional_delivery_delay_days": 0,
+        "policy": "fixed_threshold",
+        "unmet_units": 140,
+        "stockout_facility_days": 16,
+        "donor_unmet_units": 107,
+        "donor_stockout_days": 11,
+        "expiry_waste": 18,
+        "transport_cost_proxy": 90,
+        "remaining_stock": 0,
+        "in_transit": 0,
+        "ledger_hash": "b14fa060cf2c5209fff90a8daaddf212f89c606e43bb65b3b53835d500f02c59"
+      },
+      {
+        "seed": 20261002,
+        "district_surge_multiplier": 1.0,
+        "additional_delivery_delay_days": 0,
+        "policy": "nearest_feasible",
+        "unmet_units": 122,
+        "stockout_facility_days": 15,
+        "donor_unmet_units": 67,
+        "donor_stockout_days": 7,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 20,
+        "remaining_stock": 0,
+        "in_transit": 0,
+        "ledger_hash": "d14bf535e27b9c0a638beb038356244b43c27c2b4f5584c9095a4f8d367c5d74"
+      },
+      {
+        "seed": 20261002,
+        "district_surge_multiplier": 1.0,
+        "additional_delivery_delay_days": 0,
+        "policy": "full_solver",
+        "unmet_units": 122,
+        "stockout_facility_days": 14,
+        "donor_unmet_units": 57,
+        "donor_stockout_days": 6,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 10,
+        "remaining_stock": 0,
+        "in_transit": 0,
+        "ledger_hash": "ae368a5eaa8d8a2323da3ca0804b5e9aecf52199c7e0ccf5229ccba038ad7130"
+      },
+      {
+        "seed": 20261002,
+        "district_surge_multiplier": 1.0,
+        "additional_delivery_delay_days": 2,
+        "policy": "fixed_threshold",
+        "unmet_units": 122,
+        "stockout_facility_days": 14,
+        "donor_unmet_units": 97,
+        "donor_stockout_days": 11,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 80,
+        "remaining_stock": 0,
+        "in_transit": 0,
+        "ledger_hash": "54ec9894cd6d0a8b354c23b403c2dd018686a84b84939b24e734f10d81cd4667"
+      },
+      {
+        "seed": 20261002,
+        "district_surge_multiplier": 1.0,
+        "additional_delivery_delay_days": 2,
+        "policy": "nearest_feasible",
+        "unmet_units": 122,
+        "stockout_facility_days": 17,
+        "donor_unmet_units": 57,
+        "donor_stockout_days": 7,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 10,
+        "remaining_stock": 0,
+        "in_transit": 0,
+        "ledger_hash": "5bf6772091d016e8827f4277860cf09899864bc8d2dfb727643532e58662fb54"
+      },
+      {
+        "seed": 20261002,
+        "district_surge_multiplier": 1.0,
+        "additional_delivery_delay_days": 2,
+        "policy": "full_solver",
+        "unmet_units": 122,
+        "stockout_facility_days": 17,
+        "donor_unmet_units": 47,
+        "donor_stockout_days": 6,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 0,
+        "remaining_stock": 0,
+        "in_transit": 0,
+        "ledger_hash": "3e0c17d3de180d150b08116acb4c7841ac73e6d621ede320474b568ce5fee185"
+      },
+      {
+        "seed": 20261002,
+        "district_surge_multiplier": 1.5,
+        "additional_delivery_delay_days": 0,
+        "policy": "fixed_threshold",
+        "unmet_units": 237,
+        "stockout_facility_days": 25,
+        "donor_unmet_units": 189,
+        "donor_stockout_days": 18,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 90,
+        "remaining_stock": 0,
+        "in_transit": 0,
+        "ledger_hash": "0f28798509a8ec84271014d1d1da510ab1c61430ecc55a3afed55735445d5a99"
+      },
+      {
+        "seed": 20261002,
+        "district_surge_multiplier": 1.5,
+        "additional_delivery_delay_days": 0,
+        "policy": "nearest_feasible",
+        "unmet_units": 237,
+        "stockout_facility_days": 23,
+        "donor_unmet_units": 149,
+        "donor_stockout_days": 13,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 20,
+        "remaining_stock": 0,
+        "in_transit": 0,
+        "ledger_hash": "0b5c6e49a8141b14a002cb31c909d762d9ca48ce383edf02a393fa3efcfcb63f"
+      },
+      {
+        "seed": 20261002,
+        "district_surge_multiplier": 1.5,
+        "additional_delivery_delay_days": 0,
+        "policy": "full_solver",
+        "unmet_units": 237,
+        "stockout_facility_days": 23,
+        "donor_unmet_units": 139,
+        "donor_stockout_days": 13,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 10,
+        "remaining_stock": 0,
+        "in_transit": 0,
+        "ledger_hash": "9c8ef2dfa201fd3c630bd824783fb636d1bcfbd73ed2357f8f8b64d8f0ab072f"
+      },
+      {
+        "seed": 20261002,
+        "district_surge_multiplier": 1.5,
+        "additional_delivery_delay_days": 2,
+        "policy": "fixed_threshold",
+        "unmet_units": 237,
+        "stockout_facility_days": 25,
+        "donor_unmet_units": 179,
+        "donor_stockout_days": 17,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 80,
+        "remaining_stock": 0,
+        "in_transit": 0,
+        "ledger_hash": "c51d486a6ba423928e78d1a46f4a04b58ccf5d7e40adc837ee3cf3ffeee62194"
+      },
+      {
+        "seed": 20261002,
+        "district_surge_multiplier": 1.5,
+        "additional_delivery_delay_days": 2,
+        "policy": "nearest_feasible",
+        "unmet_units": 237,
+        "stockout_facility_days": 25,
+        "donor_unmet_units": 139,
+        "donor_stockout_days": 15,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 10,
+        "remaining_stock": 0,
+        "in_transit": 0,
+        "ledger_hash": "b5499626e467c12e62bd75cc4d96a8eb64595d89ec2b51b13dca8d633a37182a"
+      },
+      {
+        "seed": 20261002,
+        "district_surge_multiplier": 1.5,
+        "additional_delivery_delay_days": 2,
+        "policy": "full_solver",
+        "unmet_units": 237,
+        "stockout_facility_days": 26,
+        "donor_unmet_units": 129,
+        "donor_stockout_days": 15,
+        "expiry_waste": 0,
+        "transport_cost_proxy": 0,
+        "remaining_stock": 0,
+        "in_transit": 0,
+        "ledger_hash": "f6517dfab1103c8a38fb5569072c5671db2d535edfc6acedcedb42ce64a28275"
+      }
+    ]
+  }
+}

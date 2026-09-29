@@ -1,0 +1,43 @@
+services:
+  state-a:
+    image: postgres:16.8-alpine
+    environment: {POSTGRES_USER: demo, POSTGRES_PASSWORD: local-only-password, POSTGRES_DB: state_a}
+    ports: ["127.0.0.1:5433:5432"]
+    volumes: ["state-a:/var/lib/postgresql/data"]
+    healthcheck: {test: [CMD-SHELL, "pg_isready -U demo -d state_a"], interval: 3s, timeout: 3s, retries: 20}
+  state-b:
+    image: postgres:16.8-alpine
+    environment: {POSTGRES_USER: demo, POSTGRES_PASSWORD: local-only-password, POSTGRES_DB: state_b}
+    ports: ["127.0.0.1:5434:5432"]
+    volumes: ["state-b:/var/lib/postgresql/data"]
+    healthcheck: {test: [CMD-SHELL, "pg_isready -U demo -d state_b"], interval: 3s, timeout: 3s, retries: 20}
+  api:
+    build: {context: .., dockerfile: infra/Dockerfile}
+    environment:
+      APP_ENV: local
+      STATE_A_DATABASE_URL: postgresql+psycopg://demo:local-only-password@state-a:5432/state_a
+      STATE_B_DATABASE_URL: postgresql+psycopg://demo:local-only-password@state-b:5432/state_b
+      DEMO_TOKEN_SECRET: local-development-only-secret-32-characters
+      ALLOWED_ORIGINS: http://localhost:5173
+    depends_on: {state-a: {condition: service_healthy}, state-b: {condition: service_healthy}}
+    command: [sh, -c, "python -m scripts.migrate && python -m data.generate && uvicorn services.api.main:app --host 0.0.0.0 --port 8000"]
+    ports: ["127.0.0.1:8000:8000"]
+  web:
+    image: node:22.15.0-alpine
+    working_dir: /web
+    volumes: ["../apps/web:/web", "web-deps:/web/node_modules"]
+    command: [sh, -c, "npm ci && npm run dev -- --host 0.0.0.0"]
+    ports: ["127.0.0.1:5173:5173"]
+  federation-check:
+    profiles: [federation]
+    build: {context: .., dockerfile: infra/Dockerfile}
+    environment:
+      APP_ENV: local
+      STATE_A_DATABASE_URL: postgresql+psycopg://demo:local-only-password@state-a:5432/state_a
+      STATE_B_DATABASE_URL: postgresql+psycopg://demo:local-only-password@state-b:5432/state_b
+    depends_on: {state-a: {condition: service_healthy}, state-b: {condition: service_healthy}}
+    command: [python, -m, scripts.federation_check]
+volumes:
+  state-a:
+  state-b:
+  web-deps:

@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: swasthyasetu-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./infra/Dockerfile
+    healthCheckPath: /health/ready
+    autoDeploy: false
+    envVars:
+      - key: APP_ENV
+        value: demo
+      - key: STATE_A_DATABASE_URL
+        sync: false
+      - key: STATE_B_DATABASE_URL
+        sync: false
+      - key: DEMO_TOKEN_SECRET
+        generateValue: true
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL_ID
+        sync: false
+      - key: GEMINI_FREE_TIER_VERIFIED
+        value: "false"
+      - key: AI_GLOBAL_DAILY_LIMIT
+        value: "0"
